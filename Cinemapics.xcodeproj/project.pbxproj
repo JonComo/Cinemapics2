@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8630EAC817646CE7003B14B0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8630EAC717646CE7003B14B0 /* ImageIO.framework */; };
 		86475810176452BC007FDDA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647580F176452BC007FDDA1 /* UIKit.framework */; };
 		86475812176452BC007FDDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475811176452BC007FDDA1 /* Foundation.framework */; };
 		86475814176452BC007FDDA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475813176452BC007FDDA1 /* CoreGraphics.framework */; };
@@ -18,9 +19,34 @@
 		86475826176452BC007FDDA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86475825176452BC007FDDA1 /* Default-568h@2x.png */; };
 		86475829176452BC007FDDA1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86475827176452BC007FDDA1 /* MainStoryboard.storyboard */; };
 		8647582C176452BC007FDDA1 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647582B176452BC007FDDA1 /* CPViewController.m */; };
+		8647583D1764539A007FDDA1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583C1764539A007FDDA1 /* CoreMedia.framework */; };
+		8647583E1764539D007FDDA1 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583917645392007FDDA1 /* libGPUImage.a */; };
+		86475840176453A7007FDDA1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583F176453A7007FDDA1 /* CoreVideo.framework */; };
+		86475842176453AC007FDDA1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475841176453AC007FDDA1 /* OpenGLES.framework */; };
+		86475844176453B7007FDDA1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475843176453B7007FDDA1 /* AVFoundation.framework */; };
+		86475846176453BC007FDDA1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475845176453BC007FDDA1 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8647583817645392007FDDA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8647583217645391007FDDA1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		8647583A17645392007FDDA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8647583217645391007FDDA1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8630EAC617646CB0003B14B0 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = ../../../Dropbox/Development/Macros.h; sourceTree = "<group>"; };
+		8630EAC717646CE7003B14B0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		8647580C176452BC007FDDA1 /* Cinemapics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemapics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8647580F176452BC007FDDA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86475811176452BC007FDDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +63,12 @@
 		86475828176452BC007FDDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8647582A176452BC007FDDA1 /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
 		8647582B176452BC007FDDA1 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
+		8647583217645391007FDDA1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../Libraries/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		8647583C1764539A007FDDA1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8647583F176453A7007FDDA1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		86475841176453AC007FDDA1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		86475843176453B7007FDDA1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		86475845176453BC007FDDA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +76,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8630EAC817646CE7003B14B0 /* ImageIO.framework in Frameworks */,
+				86475846176453BC007FDDA1 /* QuartzCore.framework in Frameworks */,
+				86475844176453B7007FDDA1 /* AVFoundation.framework in Frameworks */,
+				86475842176453AC007FDDA1 /* OpenGLES.framework in Frameworks */,
+				86475840176453A7007FDDA1 /* CoreVideo.framework in Frameworks */,
+				8647583E1764539D007FDDA1 /* libGPUImage.a in Frameworks */,
+				8647583D1764539A007FDDA1 /* CoreMedia.framework in Frameworks */,
 				86475810176452BC007FDDA1 /* UIKit.framework in Frameworks */,
 				86475812176452BC007FDDA1 /* Foundation.framework in Frameworks */,
 				86475814176452BC007FDDA1 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +95,7 @@
 		86475803176452BC007FDDA1 = {
 			isa = PBXGroup;
 			children = (
+				8647583217645391007FDDA1 /* GPUImage.xcodeproj */,
 				86475815176452BC007FDDA1 /* Cinemapics */,
 				8647580E176452BC007FDDA1 /* Frameworks */,
 				8647580D176452BC007FDDA1 /* Products */,
@@ -73,6 +113,12 @@
 		8647580E176452BC007FDDA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8630EAC717646CE7003B14B0 /* ImageIO.framework */,
+				86475845176453BC007FDDA1 /* QuartzCore.framework */,
+				86475843176453B7007FDDA1 /* AVFoundation.framework */,
+				86475841176453AC007FDDA1 /* OpenGLES.framework */,
+				8647583F176453A7007FDDA1 /* CoreVideo.framework */,
+				8647583C1764539A007FDDA1 /* CoreMedia.framework */,
 				8647580F176452BC007FDDA1 /* UIKit.framework */,
 				86475811176452BC007FDDA1 /* Foundation.framework */,
 				86475813176452BC007FDDA1 /* CoreGraphics.framework */,
@@ -83,6 +129,7 @@
 		86475815176452BC007FDDA1 /* Cinemapics */ = {
 			isa = PBXGroup;
 			children = (
+				8630EAC617646CB0003B14B0 /* Macros.h */,
 				8647581E176452BC007FDDA1 /* CPAppDelegate.h */,
 				8647581F176452BC007FDDA1 /* CPAppDelegate.m */,
 				86475827176452BC007FDDA1 /* MainStoryboard.storyboard */,
@@ -105,6 +152,15 @@
 				86475825176452BC007FDDA1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8647583317645391007FDDA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8647583917645392007FDDA1 /* libGPUImage.a */,
+				8647583B17645392007FDDA1 /* GPUImageTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +203,35 @@
 			mainGroup = 86475803176452BC007FDDA1;
 			productRefGroup = 8647580D176452BC007FDDA1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8647583317645391007FDDA1 /* Products */;
+					ProjectRef = 8647583217645391007FDDA1 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8647580B176452BC007FDDA1 /* Cinemapics */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8647583917645392007FDDA1 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 8647583817645392007FDDA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8647583B17645392007FDDA1 /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = 8647583A17645392007FDDA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8647580A176452BC007FDDA1 /* Resources */ = {
@@ -263,7 +342,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cinemapics/Cinemapics-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/joncomo/Development/Libraries/GPUImage/framework/**";
 				INFOPLIST_FILE = "Cinemapics/Cinemapics-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,7 +355,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cinemapics/Cinemapics-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/joncomo/Development/Libraries/GPUImage/framework/**";
 				INFOPLIST_FILE = "Cinemapics/Cinemapics-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +382,7 @@
 				86475831176452BC007FDDA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
