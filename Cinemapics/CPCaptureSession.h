@@ -1,5 +1,5 @@
 //
-//  CPCamera.h
+//  CPCaptureSession.h
 //  Cinemapics
 //
 //  Created by Jon Como on 6/9/13.
@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CPCamera : NSObject
+typedef void (^ImageCapturedBlock)(UIImage *image, float progress);
+
+@class GPUImageView;
+
+@interface CPCaptureSession : NSObject
+
+@property (nonatomic, strong) NSMutableArray *images;
+@property float duration, frameRate;
+
+-(id)initWithFrameRate:(float)fps duration:(float)dur preview:(GPUImageView *)preview;
+
+-(void)beginCaptureWithCompletion:(ImageCapturedBlock)block;
+-(void)endCapture;
+
+-(void)startCamera;
+-(void)stopCamera;
 
 @end

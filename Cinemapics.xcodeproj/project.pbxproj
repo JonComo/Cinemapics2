@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8630EAC817646CE7003B14B0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8630EAC717646CE7003B14B0 /* ImageIO.framework */; };
+		86410291176585EA00732352 /* CPCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 86410290176585EA00732352 /* CPCaptureSession.m */; };
+		8641029717658B2900732352 /* CPCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8641029617658B2900732352 /* CPCaptureViewController.m */; };
+		8641029C1765913E00732352 /* CPPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8641029B1765913E00732352 /* CPPreviewViewController.m */; };
 		86475810176452BC007FDDA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647580F176452BC007FDDA1 /* UIKit.framework */; };
 		86475812176452BC007FDDA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475811176452BC007FDDA1 /* Foundation.framework */; };
 		86475814176452BC007FDDA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86475813176452BC007FDDA1 /* CoreGraphics.framework */; };
@@ -18,7 +21,6 @@
 		86475824176452BC007FDDA1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86475823176452BC007FDDA1 /* Default@2x.png */; };
 		86475826176452BC007FDDA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86475825176452BC007FDDA1 /* Default-568h@2x.png */; };
 		86475829176452BC007FDDA1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86475827176452BC007FDDA1 /* MainStoryboard.storyboard */; };
-		8647582C176452BC007FDDA1 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8647582B176452BC007FDDA1 /* CPViewController.m */; };
 		8647583D1764539A007FDDA1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583C1764539A007FDDA1 /* CoreMedia.framework */; };
 		8647583E1764539D007FDDA1 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583917645392007FDDA1 /* libGPUImage.a */; };
 		86475840176453A7007FDDA1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8647583F176453A7007FDDA1 /* CoreVideo.framework */; };
@@ -47,6 +49,12 @@
 /* Begin PBXFileReference section */
 		8630EAC617646CB0003B14B0 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = ../../../Dropbox/Development/Macros.h; sourceTree = "<group>"; };
 		8630EAC717646CE7003B14B0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8641028F176585EA00732352 /* CPCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCaptureSession.h; sourceTree = "<group>"; };
+		86410290176585EA00732352 /* CPCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCaptureSession.m; sourceTree = "<group>"; };
+		8641029517658B2900732352 /* CPCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCaptureViewController.h; sourceTree = "<group>"; };
+		8641029617658B2900732352 /* CPCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCaptureViewController.m; sourceTree = "<group>"; };
+		8641029A1765913E00732352 /* CPPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPreviewViewController.h; sourceTree = "<group>"; };
+		8641029B1765913E00732352 /* CPPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPreviewViewController.m; sourceTree = "<group>"; };
 		8647580C176452BC007FDDA1 /* Cinemapics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemapics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8647580F176452BC007FDDA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86475811176452BC007FDDA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,8 +69,6 @@
 		86475823176452BC007FDDA1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		86475825176452BC007FDDA1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		86475828176452BC007FDDA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8647582A176452BC007FDDA1 /* CPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
-		8647582B176452BC007FDDA1 /* CPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
 		8647583217645391007FDDA1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../Libraries/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
 		8647583C1764539A007FDDA1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8647583F176453A7007FDDA1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -92,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864102981765912F00732352 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8641028F176585EA00732352 /* CPCaptureSession.h */,
+				86410290176585EA00732352 /* CPCaptureSession.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		864102991765913400732352 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8641029517658B2900732352 /* CPCaptureViewController.h */,
+				8641029617658B2900732352 /* CPCaptureViewController.m */,
+				8641029A1765913E00732352 /* CPPreviewViewController.h */,
+				8641029B1765913E00732352 /* CPPreviewViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		86475803176452BC007FDDA1 = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +159,8 @@
 				8647581E176452BC007FDDA1 /* CPAppDelegate.h */,
 				8647581F176452BC007FDDA1 /* CPAppDelegate.m */,
 				86475827176452BC007FDDA1 /* MainStoryboard.storyboard */,
-				8647582A176452BC007FDDA1 /* CPViewController.h */,
-				8647582B176452BC007FDDA1 /* CPViewController.m */,
+				864102991765913400732352 /* View */,
+				864102981765912F00732352 /* Model */,
 				86475816176452BC007FDDA1 /* Supporting Files */,
 			);
 			path = Cinemapics;
@@ -255,7 +281,9 @@
 			files = (
 				8647581C176452BC007FDDA1 /* main.m in Sources */,
 				86475820176452BC007FDDA1 /* CPAppDelegate.m in Sources */,
-				8647582C176452BC007FDDA1 /* CPViewController.m in Sources */,
+				86410291176585EA00732352 /* CPCaptureSession.m in Sources */,
+				8641029717658B2900732352 /* CPCaptureViewController.m in Sources */,
+				8641029C1765913E00732352 /* CPPreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

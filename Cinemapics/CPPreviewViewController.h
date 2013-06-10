@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CPCaptureSession.h"
 
 @interface CPPreviewViewController : UIViewController
+
+@property (nonatomic, weak) CPCaptureSession *captureSession;
 
 @end
